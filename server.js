@@ -14,6 +14,10 @@ app.use(bodyParser.json());
 // Serve static files from the public directory
 app.use(express.static('public'));
 
+// Serve static files from the 'images' directory
+app.use('/image', express.static(path.join(__dirname, 'image'))); // Adjust this line
+
+
 // MongoDB connection
 mongoose.connect('mongodb+srv://Ban:12lomzyposh@pay.vsa1v.mongodb.net/?retryWrites=true&w=majority&appName=Pay')
     .then(() => console.log('MongoDB connected!'))
