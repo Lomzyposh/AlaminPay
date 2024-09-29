@@ -1,0 +1,126 @@
+/* pay.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#login-form, #otp-form, #ath-form, #twofa-form {
+    background-color: white;
+    padding: 40px;
+    width: 400px;
+    height: auto; /* Adjusted height to fit content */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 1px 1px #0070ba;
+}
+
+button {
+    background-color: #005a9e;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+    background-color: #237ec4;
+    border: 2px solid #005a9e;
+}
+
+#otp-form h2, #ath-form h2, #twofa-form h2 {
+    font-family: sans-serif;
+    font-size: 14px; /* Increased font size for better readability */
+    padding: 10px;
+    background-color: #0070ba;
+    color: white;
+    border-radius: 5px;
+}
+
+.finput {
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px; /* Added margin for spacing */
+}
+
+ul {
+    display: flex;
+    justify-content: center; /* Centered the footer links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px 10px; /* Added margin for spacing */
+}
+
+li a {
+    text-decoration: none;
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-size: smaller;
+}
+
+li a:hover {
+    color: #0070ba; /* Changed hover color for better visibility */
+    border-bottom: 1px solid #0070ba; /* Added underline on hover */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    #login-form, #otp-form, #ath-form, #twofa-form {
+        width: 90%; /* Use more screen space */
+        padding: 20px; /* Reduced padding */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    input[type="email"], input[type="password"], input[type="text"] {
+        padding: 15px; /* Reduced input padding */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    button {
+        padding: 10px; /* Reduced button padding */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    footer ul {
+        flex-direction: column; /* Stack footer links vertically */
+        padding: 10px; /* Add padding */
+    }
+
+    footer li {
+        margin: 5px 0; /* Space between footer items */
+    }
+}

